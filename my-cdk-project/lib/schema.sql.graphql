@@ -1,0 +1,21 @@
+type Post {
+  id: Int!
+  title: String!
+  content: String!
+  published: Boolean
+  publishedDate: AWSDate @refersTo(name: "published_date")
+}
+
+type Query {
+  searchPosts(contains: String!): [Post]
+    @sql(
+      statement: "SELECT * FROM posts WHERE title LIKE CONCAT('%', :contains, '%');"
+    )
+    @auth(rules: [{ allow: public }])
+}
+
+type Mutation {
+  createPost(title: String! content: String!): AWSJSON
+    @sql(statement: "INSERT INTO posts (title, content) VALUES (:title, :content);")
+    @auth(rules: [{ allow: public }])
+}
