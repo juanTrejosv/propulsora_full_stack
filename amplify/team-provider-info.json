@@ -13,7 +13,13 @@
     },
     "categories": {
       "function": {
-        "apiForms": {}
+        "apiForms": {
+          "deploymentBucketName": "amplify-propulsorafullstack-dev-56b33-deployment",
+          "s3Key": "amplify-builds/apiForms-464c326276777633576f-build.zip"
+        }
+      },
+      "api": {
+        "apiRest": {}
       }
     }
   }

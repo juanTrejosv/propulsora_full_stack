@@ -21,5 +21,23 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
+  },
+  "parameters": {
+    "AMPLIFY_function_apiForms_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "apiForms"
+        }
+      ]
+    },
+    "AMPLIFY_function_apiForms_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "apiForms"
+        }
+      ]
+    }
   }
 }
