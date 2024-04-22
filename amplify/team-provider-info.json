@@ -10,6 +10,11 @@
       "StackName": "amplify-propulsorafullstack-dev-56b33",
       "StackId": "arn:aws:cloudformation:us-east-1:567065860200:stack/amplify-propulsorafullstack-dev-56b33/14d43d70-00e1-11ef-a657-0e8018a7fce7",
       "AmplifyAppId": "d2k84egmragf52"
+    },
+    "categories": {
+      "function": {
+        "apiForms": {}
+      }
     }
   }
 }
